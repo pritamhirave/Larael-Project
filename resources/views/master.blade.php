@@ -20,14 +20,15 @@
 </head>
 
 <body>
-
+    {{View::make('header')}}
+    @yield('content')
+    {{View::make('footer')}}
 </body>
-<script>
-$(document).ready(function() {
-    $("button").click(function() {
-        alert("all set");
-    })
-})
-</script>
+<style>
+.custome-login {
+    height: 450px;
+    padding-top: 100px
+}
+</style>
 
 </html>
